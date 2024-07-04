@@ -57,15 +57,33 @@
 
 # print(n_fac("ana"))
 
-def show_arr(a):
+# def show_arr(a):
 
-    x = len(a)
-    if x > 0 :
-        for i in range(x):
-            print(a[i])
-    else:
-        print(a)
+#     x = len(a)
+#     if x > 0 :
+#         for i in range(x):
+#             print(a[i])
+#     else:
+#         print(a)
 
-# a = [4, 9, 0]
-a=[-1,-2,-3]
-show_arr((a))        
+# # a = [4, 9, 0]
+# a=[-1,-2,-3]
+# show_arr((a))        
+
+# def big_nr(a):
+#     st1 = a[0]
+#     x =len(a)
+#     for i in range(x):
+#         if st1 < a[i]:
+#             st1 = a[i]
+            
+#     return st1
+# a =[4, 5, 8, 6, 7]
+# print(big_nr(a))
+
+#Simple metod
+def big_nr(a):
+    return max(a)
+
+a= [1, 44, 5,8]
+print(big_nr(a))
