@@ -82,8 +82,34 @@
 # print(big_nr(a))
 
 #Simple metod
-def big_nr(a):
-    return max(a)
+# def big_nr(a):
+#     return max(a)
 
-a= [1, 44, 5,8]
-print(big_nr(a))
+# a= [1, 44, 5,8]
+# print(big_nr(a))
+
+# def find_str(a,b):
+#     if b in a:
+#         print(f"Avem caraterul {b} in cuvantul {a}")
+#     else:
+#         print(f"Nu avem caracterul {b} in cuvantul {a}")
+
+# find_str("mere", "a")
+
+#Versiune imbunatatita
+
+def find_str(a,b):
+    if not isinstance(a,str) or not isinstance(b,str):
+        print("Ambele trebuies ca fie string")
+    if len(b) != 1:
+        print("Trebuie sa fie un caracter unic")
+        return
+    if len(a) == 0:
+        print(f" '' ")
+        return
+    if b in  a:
+        print(f"Avem caratertul {b} in {a}")
+    else:
+        print(f"Nu avem caraterul {b} in {a}")
+
+find_str("","a")
